@@ -15,7 +15,6 @@ const ProjectsReducer = (state = stateDefault, action) => {
             return { ...state }
         case GET_ALL_PROJECTS:
             const { allProjects } = action
-            console.log(allProjects);
             state.allProjects = allProjects
             return { ...state }
 

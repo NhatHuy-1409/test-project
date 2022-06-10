@@ -6,13 +6,11 @@ export const signIn = (infoLogin) => {
     return async (dispatch) => {
         try {
             const result = await userServices.signIn(infoLogin)
-            console.log(result);
             if (result.data.statusCode === 200) {
                 dispatch({
                     type: SIGNIN_ACTION,
                     infoLogin: result.data.content
                 })
-                console.log('ok');
                 message.success('You have succesfully signed in our website.')
             }
         }

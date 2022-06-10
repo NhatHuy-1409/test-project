@@ -39,7 +39,7 @@ export default function GetAllProject() {
             title: 'Action',
             key: 'action',
             render:() => { 
-                return <Space size='middle'>
+                return <Space  size='middle'>
                     <a>...</a>
                 </Space>
              }
@@ -62,7 +62,7 @@ export default function GetAllProject() {
                 >
                 </Space>
 
-                <Table columns={columns} dataSource={allProjects}  />
+                <Table  columns={columns} dataSource={allProjects} rowKey="id" />
             </div>
         </div>
     )
